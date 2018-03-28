@@ -1,10 +1,19 @@
-// open modal
+// close landing modal
 
-$(document).on('click', '.col', function(){
-  var modal = $('.modal');
+$(document).on('click', '.modal-landing', function(){
+  var modal = $('.modal-landing');
   // fill the modal
 
-  $(modal).css('display','inline');
+  $(modal).css('display','none');
+});
+
+//re-open landing modal
+
+$(document).on('click', '.header-name', function(){
+  var modal = $('.modal-landing');
+  // fill the modal
+
+  $(modal).css('display','block');
 });
 
 // close modal
