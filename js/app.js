@@ -14,14 +14,14 @@ $(document).on('click', '#forward-arrow', function(){
   if(check === 'project4'){
     $('#forward-arrow').hide()
   }else{
-      $('.project-div').hide();
+
       var oldDiv = $('.selected');
       var newDiv = $('.selected').next('.project-div');
 
       oldDiv.removeClass('selected');
       newDiv.addClass('selected');
-
-      newDiv.show();
+      $('.project-div').hide();
+      newDiv.fadeIn(700);
   };
 });
 
@@ -39,7 +39,7 @@ $(document).on('click', '#back-arrow', function(){
       oldDiv.removeClass('selected');
       newDiv.addClass('selected');
 
-      newDiv.show();
+      newDiv.fadeIn(700);
   };
 
 });
