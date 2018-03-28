@@ -92,7 +92,8 @@ header {
 
   float: left;
   line-height: 2rem;
-  font-family: 'Italianno', serif;
+  /* font-family: 'Italianno', serif; */
+  font-family: 'Montserrat';
   font-size: 2.5rem;
   color: rgb(29, 29, 29);
 
@@ -170,30 +171,35 @@ header {
 
 section {
   margin: 0 auto;
-  width: 75%;
+
   /* background: rgba(252, 255, 240, .2); */
   border-radius: 8px;
   color: rgb(23, 23, 23);
   margin-bottom: 1rem;
   position: relative;
   z-index: 200;
+  width: 100%;
+  height: 100%;
 }
 
 /* portfolio */
 
 .row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(1, 1fr);
+
   grid-column-gap: 5%;
   background: none;
   z-index: 5;
+  width: 100%;
+  height: 100%;
 
 }
 
 .col {
   margin: 0 auto;
-
+  width: 100%;
+  height: 100%;
   margin-left: 5px;
   margin-bottom: 10px;
   text-align: center;
@@ -264,6 +270,12 @@ footer {
 
 .modal-landing strong {
   color: rgb(255, 66, 122);
+}
+
+.modal-content {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 
