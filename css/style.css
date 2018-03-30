@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-size: 62.5%;
 }
 
 body {
@@ -62,9 +63,11 @@ header {
 
   overflow: hidden;
   height: 75px;
-  background-color: rgba(255, 20, 168, 0.05);
+  background-color: rgba(255, 20, 168, 1);
   z-index: 500;
   opacity: 1;
+  box-shadow: 2px 1px;
+
 
 
 }
@@ -91,12 +94,11 @@ header {
 .header-name {
 
   float: left;
-  line-height: 2rem;
+  line-height: 3rem;
   /* font-family: 'Italianno', serif; */
-  font-family: 'Montserrat';
-  font-size: 2.5rem;
-  color: rgb(29, 29, 29);
-
+  font-family: 'Marck Script', cursive;
+  font-size: 4rem;
+  color: white;
 }
 
 
@@ -117,24 +119,22 @@ header {
 /* Icon bar */
 
 .icon-bar {
-  width: 75px;
-  background: rgba(0, 237, 214, .3);
+  width: 50%;
+  background: rgba(0, 237, 214, .1);
   float: right;
   height: 100%;
-  position: fixed;
-  top: 0px;
-  right: 0px;
+
   z-index: 550;
 
 }
 
 .icon-bar a {
   text-align: center;
-  padding: 5px;
+  padding: 30px;
   padding-top: 10px;
   margin: 0 auto;
   font-size: 48px;
-  display: block;
+  display: inline;
   color: white;
   transition: all .5s ease;
 }
@@ -142,10 +142,11 @@ header {
 
 .icon-bar a:hover {
   text-align: center;
-  padding: 5px;
+  padding-left: 20px;
+  padding-right: 40px;
   margin: 0 auto;
   font-size: 48px;
-  display: block;
+  display: inline;
   color: rgb(186, 74, 255);
 }
 
@@ -187,14 +188,14 @@ header {
 
 .arrow:hover {
   color: rgb(90, 30, 98);
-  background: rgba(33, 227, 251, 0.1);
+
   border-radius: 20px;
 }
 
 #back-arrow {
   position: absolute;
   top: 11%;
-  left: 3%;
+  left: 1%;
 }
 
 #forward-arrow {
@@ -210,7 +211,8 @@ header {
   margin: 0 auto;
   width: 80%;
   height: 75%;
-  background: rgba(252, 255, 240, .2);
+  overflow: auto;
+  background: rgba(253, 255, 237, .8);
   border-radius: 8px;
   color: rgb(23, 23, 23);
   margin-bottom: 1rem;
@@ -254,32 +256,52 @@ header {
   margin-top: 15px;
   box-shadow: 3px 5px rgba(177, 177, 177, 0.88);
   z-index: 5;
-  float: right;
+  display: block;
+  float: left;
   margin-right: 20px;
   filter: blur(1px);
 
 }
 
 .project-title {
+  font-family: 'Marck Script', cursive;
   margin: 10px;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 4.0rem;
   z-index: 5;
   display: inline-block;
+  color: rgb(42, 0, 65);
 }
 
 .project-blurb {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 5px;
+
+
 }
 
 .project-icon-bar {
   font-size: 3em;
-  padding: 20px;
-  position: absolute;
-  bottom: 20%;
+  padding: 15px;
+  float: left;
+  display: block;
 
 
+
+
+}
+
+.skills-ul {
+  font-size: 2rem;
+}
+
+.big-blurb {
+  font-size: 2.3rem;
+}
+
+.click-for-more {
+  text-align: right;
+  font-size: 3rem;
 }
 
 
@@ -339,4 +361,146 @@ footer {
 
 .close-modal:hover {
   color: rgba(247, 255, 121, 0.8);
+}
+
+@media only screen and (min-width: 720px) {
+  .project-icon-bar {
+    font-size: 3em;
+    padding: 15px;
+    float: left;
+    display: block;
+    position: absolute;
+    bottom: 20%;
+
+
+
+  }
+
+}
+@media only screen and (max-width: 480px) {
+    ::-webkit-scrollbar {
+  display: none;
+  }
+
+  /* Header CSS */
+  header {
+    width: 100%;
+
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    overflow: hidden;
+    height: 20%;
+    z-index: 500;
+    opacity: 1;
+
+
+  }
+
+
+
+  .header-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 1;
+
+  }
+
+  .header-scroll {
+    background: rgba(42, 42, 84, .9);
+  }
+
+
+  .spacer {
+    width: 100%;
+    height: 20%;
+  }
+
+
+  .header-name {
+
+    line-height: 2rem;
+    /* font-family: 'Italianno', serif; */
+
+    font-size: 3rem;
+    color: rgb(29, 29, 29);
+    margin: 20 auto;
+    margin-bottom: 20px;
+
+  }
+
+
+  .icon-bar {
+    width: 100%;
+    background: rgba(0, 237, 214, .1);
+    float: right;
+    height: 100%;
+
+    z-index: 550;
+
+  }
+
+  .icon-bar a {
+    text-align: center;
+    padding: 30px;
+    padding-top: 10px;
+    margin: 0 auto;
+    font-size: 48px;
+    display: inline;
+    color: white;
+    transition: all .5s ease;
+  }
+
+
+  .icon-bar a:hover {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin: 0 auto;
+    font-size: 48px;
+    display: inline;
+    color: rgb(186, 74, 255);
+  }
+
+  .project-div {
+    margin: 0 auto;
+    width: 80%;
+    overflow: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 10px;
+    overflow-y: scroll;
+    z-index: 200;
+  }
+
+  .img-thumb {
+    margin: 0 auto;
+    margin-top: 15px;
+    box-shadow: 3px 5px rgba(177, 177, 177, 0.88);
+    z-index: 5;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    filter: blur(1px);
+
+  }
+
+
+  .skills-ul {
+    font-size: 1.5rem;
+  }
+
+  .big-blurb {
+    font-size: 2.3rem;
+  }
+
+  .click-for-more {
+    text-align: right;
+    font-size: 2rem;
+  }
+
+
 }

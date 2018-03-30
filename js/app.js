@@ -3,8 +3,8 @@
 $(document).ready(function() {
   $('.project-div').hide();
   $('#back-arrow').hide();
-  $('#project1').show();
-  $('#project1').addClass('selected');
+  $('#project0').show();
+  $('#project0').addClass('selected');
 });
 
 $(document).on('click', '#forward-arrow', function(){
@@ -29,7 +29,7 @@ $(document).on('click', '#back-arrow', function(){
     var check = $('.selected').attr('id');
     $("#forward-arrow").show();
 
-  if(check === 'project1'){
+  if(check === 'project0'){
     $('#back-arrow').hide()
   }else{
       $('.project-div').hide();
