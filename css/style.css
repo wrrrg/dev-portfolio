@@ -118,7 +118,7 @@ header {
 
 .icon-bar {
   width: 75px;
-  background: rgba(0, 237, 214, .8);
+  background: rgba(0, 237, 214, .3);
   float: right;
   height: 100%;
   position: fixed;
@@ -181,6 +181,8 @@ header {
 
 .arrow-text {
   margin: 0 auto;
+  position: absolute;
+  bottom: 20%;
 }
 
 .arrow:hover {
@@ -212,6 +214,7 @@ header {
   border-radius: 8px;
   color: rgb(23, 23, 23);
   margin-bottom: 1rem;
+  padding: 10px;
 
   z-index: 200;
 }
@@ -244,29 +247,39 @@ header {
 
   background: rgba(249, 235, 201, 0.1);
   /* box-shadow: 1px 1px rgba(177, 177, 177, 0.88); */
-} */
+
 
 .img-thumb {
   margin: 0 auto;
   margin-top: 15px;
   box-shadow: 3px 5px rgba(177, 177, 177, 0.88);
   z-index: 5;
-  float: left;
+  float: right;
   margin-right: 20px;
   filter: blur(1px);
 
 }
 
 .project-title {
-  margin: 0;
+  margin: 10px;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   z-index: 5;
   display: inline-block;
 }
 
 .project-blurb {
-  display: inline-block;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.project-icon-bar {
+  font-size: 3em;
+  padding: 20px;
+  position: absolute;
+  bottom: 20%;
+
+
 }
 
 
@@ -297,7 +310,7 @@ footer {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(244,244,244,.97); /* Black w/ opacity */
     color: black;
-    font-size: 4.5rem;
+    font-size: 3rem;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
 }
